@@ -1,0 +1,212 @@
+/* ===== RESETEO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ===== HEADER ===== */
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo-nombre {
+  display: flex;
+  align-items: center;
+}
+
+.Logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.NombreP {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Botón desplegable */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 8px 12px;
+  font-weight: bold;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+  border-radius: 5px;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Botón salir */
+.salir {
+  padding: 7px 12px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.salir:hover {
+  background-color: #c6f6cf;
+}
+
+.foto_perfil {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* ===== CONTENIDO ===== */
+main {
+  flex: 1;
+  padding-top: 90px; /* espacio para el header fijo */
+  padding-bottom: 40px; /* espacio para que no se pegue al footer */
+}
+
+.perfil-container {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.btn-verde {
+  display: inline-block;
+  width: 200px;
+  margin: 5px auto;
+  padding: 8px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-verde:hover {
+  background: #45a049;
+}
+
+.foto-perfil-modal img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #2196F3;
+  margin: 15px 0;
+  object-fit: cover;
+}
+
+/* ===== FOOTER ===== */
+footer.footer {
+  background-color: #1b1a1a;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #139422;
+}
+
+.terminos {
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 5px;
+}
+.agro{
+text-decoration: none;
+color: black;
+}

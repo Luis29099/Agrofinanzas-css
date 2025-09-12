@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comentarios - AgroFinanzas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" style="background: white; color: black;">
+  <div class="logo-nombre">
+    <img src="/imagenes/imagen_2025-07-03_232159777-removebg-preview.png" class="Logo" alt="Logo">
+    <h1 class="NombreP"><a href="/inicio/Inicio.html" class="inicioa">AgroFinanzas</a></h1>
+  </div>
+  <div class="nav-buttons">
+    <div class="dropdown">
+      <button class="dropbtn">Secciones ▼</button>
+      <div class="dropdown-content">
+        <a href="/Finanzas/index.html">Finanzas</a>
+        <a href="/Agronomia/index.html">Agronomía</a>
+        <a href="/Comentarios/index.html">Comentarios</a>
+      </div>
+    </div>
+    <a href="/HOME/home.html" class="salir">Cerrar Sesión</a>
+    <!-- Avatar clickeable -->
+    <a href="/Perfil/index.html">
+      <img id="avatar" src="" alt="avatar" class="foto_perfil">
+    </a>
+  </div>
+</header>
+
+<!-- ===== CONTENIDO PRINCIPAL ===== -->
+<main class="recomendaciones-container">
+  <div class="titulo-volver">
+    <h2>RECOMENDACIONES Y COMENTARIOS </h2>
+  </div>
+
+  <div class="comentario-box">
+    <input type="text" id="comentarioInput" placeholder="Comentar..." aria-label="Comentar">
+    <button class="btn-comentar" id="btnComentar">Comentar</button>
+  </div>
+
+  <!-- Contenedor dinámico de comentarios -->
+  <div id="comentariosContainer"></div>
+
+  <!-- Recomendaciones extra -->
+  <section class="info-extra">
+    <div>
+      <h4>Cultivo</h4>
+      <ul>
+        <li>El aguacate necesita clima templado, entre 10° y 30°.</li>
+        <li>Mucha luz solar, sin calor extremo.</li>
+        <li>Regar cuando el suelo lo requiera.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Para el café</h4>
+      <ul>
+        <li>No consumir más de 400 mg de cafeína al día.</li>
+        <li>Evitar el café azucarado.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Ganado vacuno</h4>
+      <ul>
+        <li>Corrales con espacio suficiente para movimiento.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Gallinas</h4>
+      <ul>
+        <li>Dieta balanceada: proteínas, verduras y vitaminas.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-section">
+    <h3>Números de Contacto</h3>
+    <p>+57 311 7091198</p>
+    <p>+57 312 7759123</p>
+    <p>+57 314 2716135</p>
+    <p>+57 316 0993123</p>
+  </div>
+  <div class="footer-section">
+    <h3>Redes Sociales</h3>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p class="terminos">Términos de usos</p>
+  </div>
+  <div class="footer-section">
+    <h3>Correos Electrónicos</h3>
+    <p>jeanc1778@gmail.com</p>
+    <p>forcemenrtartu@gmail.com</p>
+    <p>luisestebannarvaez82@gmail.com</p>
+    <p>chicanganad9@gmail.com</p>
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="perfil.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

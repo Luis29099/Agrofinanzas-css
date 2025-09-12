@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* ===== HEADER ===== */
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;   /* igual al segundo */
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;              /* quitamos el -10px */
+  width: 100%;
+  z-index: 1000;        /* mismo nivel */
+}
+
+.logo-nombre {
+  display: flex;
+  align-items: center;
+}
+
+.Logo {
+  width: 50px;          /* reducido para igualar */
+  height: 50px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.NombreP {
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  position: static;    /* quitamos left:-30px */
+}
+
+/* Botón desplegable */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 8px 12px;
+  font-weight: bold;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+  border-radius: 5px;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none; /* igual al segundo */
+}
+
+.dropdown-content a:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Botón salir */
+.salir {
+  padding: 7px 12px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none; /* igual al segundo */
+}
+
+.salir:hover {
+  background-color: #c6f6cf;
+}
+
+.foto_perfil {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* 🌙 Modo oscuro */
+.dark-mode {
+  background-color: rgb(0, 0, 0);
+  color: #fcfcfc;
+  margin: 5px;
+  border-radius: 20px;
+}
+.dark-mode .card {
+  background-color: #178828;
+}
+.mostrar {
+  background: linear-gradient(135deg, #2ecc71, #27ae60); /* degradado verde */
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  height: 40px;
+  width: 140px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.mostrar:hover {
+  background: linear-gradient(135deg, #27ae60, #1e8449); /* tono más oscuro al hover */
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+
+/* 🔝 Botón scroll */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #11998e;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+/* ======== Estilos generales ======== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f0f9f4; /* Verde muy claro */
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  position: relative;
+  top: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1, h2 {
+  color: #139422; /* Verde principal */
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  border-left: 5px solid #139422;
+  padding-left: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* ======== Listas ======== */
+ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* ======== Tarjetas de información ======== */
+.info {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.12);
+}
+
+/* ======== Collage de imágenes ======== */
+.info-collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.info-collage img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.info-collage img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* ======== Noticias ======== */
+#news-search {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.news-card {
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #e8f9f0;
+  border-radius: 10px;
+}
+
+.news-card h3 {
+  margin: 0 0 5px;
+  color: #0b7a16;
+}
+
+/* ======== Modal ======== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.modal .close {
+  position: absolute;
+  top: 20px; right: 30px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* ======== Modo oscuro ======== */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #f2f2f2;
+}
+
+.dark-mode .info {
+  background: #333;
+  color: #f2f2f2;
+}
+
+.dark-mode .news-card {
+  background: #444;
+}
+/* ===== FOOTER ===== */
+footer.footer {
+  background-color: #1b1a1a;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  position: relative;
+  left: 130px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-section p {
+  position: relative;
+  left: 130px;
+  margin: 5px 0;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #139422;
+}
+
+.terminos {
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 5px;
+}
+.inicioa{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.Home {
+  font-family: sans-serif;
+  background-color: #eaf7e9;
+}
+
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo-nombre {
+  display: flex;
+  align-items: center;
+}
+
+.Logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.NombreP {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.botones {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-navegacion {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  background: linear-gradient(135deg, #38ef7d, #11998e);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.btn-navegacion:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #42f5b6, #1dd1a1);
+}
+
+
+main {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.imagenH {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.Presentacion {
+  width: 80%;
+  text-align: center;
+}
+
+.Titulo {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.Texto1 {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+  width: 90%;
+  margin: 0 auto;
+}
+footer.footer {
+  background-color: #1b1a1a;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #139422;
+}
+
+.terminos {
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 5px;
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="iniciar_sesion.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-nombre">
+            <img src="/imagenes/imagen_2025-07-03_232159777-removebg-preview.png" class="Logo" alt="Logo">
+            <h1 class="NombreP">AgroFinanzas</h1>
+        </div>
+
+        <div class="botones">
+            <a href="/HOME/home.html" class="btn-navegacion">Home</a>
+            <a href="/Registrarse/registrarse.html" class="btn-navegacion">Registrarse</a>
+        </div>
+    </header>
+
+    <img src="/imagenes/photo-1677125671399-65852c6dfb05.avif" class="fondo" alt="fondo">
+
+    <div class="apartado">
+        <img src="/imagenes/imagen_2025-07-03_232159777-removebg-preview.png" alt="Logo-l" class="Logo-l">
+    <h1 class="titulo-inicio">Inicio</h1>
+
+    <p class="texto">Correo</p>
+<input type="text" placeholder="juanito@gmail.com" id="correo" class="Correo">
+
+<p class="Contraseña">Contraseña</p>
+<div class="password-container">
+    <input type="password" placeholder="********" id="password" class="contraseña">
+    <span class="toggle-password" onclick="mostrarOcultar()">👁️</span>
+</div>
+
+
+    <div class="recordar">
+        <input type="checkbox" id="recordar">
+        <label for="recordar">Recordar</label>
+    </div>
+
+    <div class="contenedor-boton">
+        <button class="boton" onclick="iniciarSesion()">Iniciar sesión</button>
+    </div>
+
+    <p class="registro-link">¿No tienes cuenta?
+        <a href="/Registrarse/registrarse.html">Regístrate aquí</a>
+    </p>
+</div>
+
+    <script src="app.js">
+       
+    </script>
+</body>
+</html>

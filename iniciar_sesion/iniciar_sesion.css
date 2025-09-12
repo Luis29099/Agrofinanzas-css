@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img.fondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.apartado{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    opacity: 70%;
+    z-index: 1;
+    display: flex;
+   align-items: flex-start;
+justify-content: flex-start;
+padding: 20px;
+    flex-direction:column;
+
+    
+
+}
+.Correo{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.correo-texto {
+    width: 80%;              
+    text-align: left;        
+    font-size: 12px;
+    color: #555;
+    margin-top: -5px; 
+}
+.contraseña{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+.recordar {
+    width: 80%;              
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-align: left;
+    color: #333;
+    font-size: 14px;
+}
+.boton{
+    text-align: center;
+    width: 50%;
+    font-size: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(27, 220, 101);
+    border-radius: 5px;
+}
+.boton:hover{
+    background-color: #1b8533;
+}
+.password-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 30px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+.registro-link {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.registro-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.registro-link a:hover {
+    text-decoration: underline;
+}
+input {
+    margin-bottom: 10px; 
+}
+header.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.logo-nombre {
+  display: flex;
+  align-items: center;
+}
+
+.Logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.NombreP {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.botones {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-navegacion {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  background: linear-gradient(135deg, #38ef7d, #11998e);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.btn-navegacion:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #42f5b6, #1dd1a1);
+}
+.LINKI{
+    color: white;
+    text-decoration: none;
+}
+.salir{
+    padding: 8px 12px;
+  font-size: 14px;
+  
+  border-radius: 5px;
+ text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.salir:hover{
+    background-color: #52ba5e;
+    border: 1px solid #000000;
+}
+.titulo-inicio {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-boton {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+.registro-link{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Logo-l {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto; /* Esto la centra horizontalmente */
+    display: block; /* Asegura que se comporte como un bloque */
+    border-radius: 50%;
+}
+.redirigir{
+text-decoration: none;
+color:black;
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="registrarse.css">
+    
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-nombre">
+            <img src="/imagenes/imagen_2025-07-03_232159777-removebg-preview.png" class="Logo" alt="Logo">
+            <h1 class="NombreP">AgroFinanzas</h1>
+        </div>
+
+        <div class="botones">
+            <a href="/HOME/home.html" class="btn-navegacion">Home</a>
+            <a href="/iniciar_sesion/iniciar_sesion.html" class="btn-navegacion">Iniciar sesion</a>
+        </div>
+    </header>
+
+    <img src="/imagenes/premium_photo-1666976923529-f0366d02d726.avif" class="fondo" alt="fondo">
+
+    <div class="apartado">
+    <img src="/imagenes/imagen_2025-07-03_232159777-removebg-preview.png" alt="Logo Registro" class="Logo-r">
+    <h1>Registro</h1>
+
+    <p class="texto-1">Ingrese su nombre</p>
+   <input type="text" id="nombre" placeholder="Ingrese su nombre" class="Nombre">
+
+    <p class="correo-1">Ingrese su correo</p>
+    <input type="email" id="correo" placeholder="Correo" class="Correo">
+
+    <p class="contraseña-1">Ingrese su contraseña</p>
+    <input type="password" id="contraseña" placeholder="Ingrese una contraseña" class="contraseña">
+
+    <div class="contenedor-boton">
+        <button class="boton" onclick="registrarUsuario()">Registrarse</button>
+    </div>
+    
+
+    <p class="registro-link">¿Ya tienes cuenta?
+        <a href="/iniciar_sesion/iniciar_sesion.html">Inicia sesión aquí</a>
+    </p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
+
