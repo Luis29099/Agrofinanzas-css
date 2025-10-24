@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gestor de Ingresos y Gastos — Demo</title>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-nombre">
+      <img src="/imagenes/logo2.png" alt="logo" class="Logo" />
+      <a class="NombreP" href="#">AgroFinanzas</a>
+    </div>
+
+    <div class="nav-buttons">
+      <div class="dropdown">
+        <button class="dropbtn">Secciones ▼</button>
+        <div class="dropdown-content">
+          <a href="#">Finanzas</a>
+          <a href="#">Agronomía</a>
+          <a href="#">Comentarios</a>
+        </div>
+      </div>
+      <button class="btn-neon salir">Cerrar Sesión</button>
+      <img id="avatar"  alt="avatar" class="foto_perfil" />
+    </div>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h1>Mis Finanzas</h1>
+
+      <div class="controls">
+        <div class="form-row">
+          <select id="type">
+            <option value="income">Ingreso</option>
+            <option value="expense">Gasto</option>
+          </select>
+
+          <input id="desc" type="text" placeholder="Descripción" />
+          <input id="amount" type="number" placeholder="Valor" />
+
+          <button id="addBtn" class="btn-neon">Agregar</button>
+        </div>
+
+        <div class="summary">
+          <div class="tile">
+            <small>Ingresos</small>
+            <div id="totalIncome" class="value">₡0</div>
+          </div>
+          <div class="tile">
+            <small>Gastos</small>
+            <div id="totalExpense" class="value">₡0</div>
+          </div>
+          <div class="tile">
+            <small>Balance</small>
+            <div id="balance" class="value">₡0</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-wrap">
+        <canvas id="finChart"></canvas>
+      </div>
+
+      <div class="list-wrap">
+        <h2>Movimientos</h2>
+        <ul id="txList" class="tx-list">
+          <!-- items inserted by JS -->
+        </ul>
+      </div>
+
+      <div class="api-controls">
+        <button id="syncBtn" class="btn-outline">Simular sync con API</button>
+        <small class="muted">Simulación: reemplaza por fetch() a tu API real.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-section">
+      <h3>Números de Contacto</h3>
+      <p>+57 311 7091198</p>
+    </div>
+    <div class="footer-section">
+      <h3>Redes Sociales</h3>
+      <p class="terminos">Términos de uso</p>
+    </div>
+    <div class="footer-section">
+      <h3>Correos</h3>
+      <p>soporte@agrofinanzas.com</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+/* 🌿 ---------- CONFIGURACIÓN GLOBAL ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top left, #0a0a0a 0%, #1b1b1b 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: #18d92e;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #42f5b6;
+}
+
+/* 🌿 ---------- NAVBAR ---------- */
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Logo y nombre */
+.logo-nombre {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(24, 217, 46, 0.5));
+}
+
+.NombreP {
+  font-size: 22px;
+  font-weight: bold;
+  color: #18d92e;
+}
+
+/* ---------- BOTONES Y DROPDOWN ---------- */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dropbtn,
+.salir {
+  font-family: 'Poppins', sans-serif;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background: linear-gradient(135deg, #38ef7d, #11998e);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.dropbtn:hover,
+.salir:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #42f5b6, #1dd1a1);
+  box-shadow: 0 0 15px rgba(24, 217, 46, 0.3);
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  min-width: 160px;
+  z-index: 999;
+}
+
+.dropdown-content a {
+  color: #18d92e;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+  background: rgba(24, 217, 46, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* 🌿 ---------- FOTO DE PERFIL ---------- */
+.foto_perfil {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #18d92e;
+  box-shadow: 0 0 10px rgba(24, 217, 46, 0.5);
+}
+
+/* 🌿 ---------- BOTÓN SALIR ---------- */
+.salir {
+  background: linear-gradient(135deg, #38ef7d, #11998e);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.salir:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 20px rgba(24, 217, 46, 0.5);
+}
+
+/* 🌿 ---------- MAIN ---------- */
+main.FinanzasF {
+  flex: 1;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+/* Título principal */
+.titulo-principal {
+  font-size: 32px;
+  color: #18d92e;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 0 0 15px rgba(24, 217, 46, 0.4);
+}
+
+/* 🌿 ---------- TARJETAS DE FINANZAS ---------- */
+.finanzas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 90%;
+}
+
+.finanza-card {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.finanza-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(24, 217, 46, 0.4);
+}
+
+.img-card {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.textog {
+  background: linear-gradient(135deg, #38ef7d, #11998e);
+  text-align: center;
+  padding: 14px 0;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+}
+
+/* 🌿 ---------- FOOTER ---------- */
+footer.footer {
+  background: linear-gradient(135deg, #0b0b0b, #111);
+  color: #ccc;
+  padding: 50px 20px;
+  border-top: 2px solid #18d92e;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.6);
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-section h3 {
+  color: #18d92e;
+  margin-bottom: 20px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  text-align: center;
+}
+
+.footer-section h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #18d92e;
+  margin: 8px auto 0 auto;
+  border-radius: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+  margin: 0;
+  text-align: center;
+}
+
+.footer-section li {
+  color: #ccc;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-section li:hover {
+  color: #42f5b6;
+}
+
+/* ICONOS SOCIALES */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.social-icons img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.social-icons img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 10px #18d92e;
+}
+
+/* TÉRMINOS */
+.terminos {
+  margin-top: 20px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.terminos a {
+  color: #42f5b6;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.terminos a:hover {
+  color: #18d92e;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    min-width: 100%;
+  }
+}
+/* 🌿 ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .finanzas-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header.navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}

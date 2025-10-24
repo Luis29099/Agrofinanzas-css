@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroFinanzas – Vacas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+    <header class="navbar">
+        <div class="logo-nombre">
+            <img src="/imagenes/logo2.png.jpg" class="Logo" alt="Logo">
+            <h1 class="NombreP"><a href="/inicio/Inicio.html" class="inicioa">AgroFinanzas</a></h1>
+        </div>
+        <div class="nav-buttons">
+            <div class="dropdown">
+                <button class="dropbtn">Secciones ▼</button>
+                <div class="dropdown-content">
+                    <a href="/segunda api/index.html">Finanzas</a>
+                    <a href="/Agronomia/index.html">Agronomía</a>
+                     <a href="/comentarios/comentarios.html">Comentarios</a>
+                </div>
+            </div>
+            <a href="/HOME/home.html" class="salir">Cerrar Sesión</a>
+            <a href="/Perfil/index.html">
+  <img id="avatar"  alt="Foto de perfil" class="foto_perfil">
+</a>
+        </div>
+    </header>
+
+
+  <!-- ===== CONTENIDO PRINCIPAL ===== -->
+  <main class="container">
+    <h1>🐄 Vacas: Manejo y Producción</h1>
+    <button onclick="toggleTheme()" class="dark-mode">🌗 Cambiar tema</button>
+
+    <!-- Razas -->
+    <section class="info" id="razas">
+      <h2>Razas más comunes 
+        <button onclick="toggleSection('razas-content')" class="mostrar">Mostrar/Ocultar</button>
+      </h2>
+      <div id="razas-content">
+        <p>
+          Entre las más conocidas están: <strong>Holstein</strong> (alta producción de leche), 
+          <strong>Jersey</strong> (leche rica en grasa), <strong>Angus</strong> (carne de calidad) y 
+          <strong>Brahman</strong> (resistencia a climas cálidos).
+        </p>
+        <div class="info-collage">
+          <img src="https://licnz.com/wp-content/uploads/2020/10/Holstein-Friesian-bull-Mint-Edition-Front-on.jpg" alt="Vaca Holstein" onclick="enlargeImage(this)">
+          <img src="https://i.pinimg.com/originals/e5/79/01/e57901f813294688ca0bf4f313e5c840.jpg" alt="Vaca Jersey" onclick="enlargeImage(this)">
+          <img src="https://www.lechedeflorida.com/core/fileparse.php/278/urlt/Holstein-Cow-Headshot.jpg" alt="Vaca de leche" onclick="enlargeImage(this)">
+          <img src="https://www.miguelvergara.com/actualidad/wp-content/uploads/2023/10/vaca-frisona-listado.jpg" alt="Vaca frisona" onclick="enlargeImage(this)">
+        </div>
+      </div>
+    </section>
+
+    <!-- Suelo y pasturas -->
+    <section class="info" id="suelo">
+      <h2>Suelo y pasturas 
+        <button onclick="toggleSection('suelo-content')" class="mostrar">Mostrar/Ocultar</button>
+      </h2>
+      <div id="suelo-content">
+        <p>
+          Prefieren suelos bien drenados, con pastos nutritivos como <em>kikuyo</em>, 
+          <em>ryegrass</em> y <em>trébol</em>. El pH ideal está entre 6 y 7, con alto contenido
+          de materia orgánica.
+        </p>
+        <div class="info-collage">
+          <img src="https://images.unsplash.com/photo-1714983894044-44ca0451216b?q=80&w=1170&auto=format&fit=crop" alt="Pasturas nutritivas" onclick="enlargeImage(this)">
+          <img src="https://www.gob.mx/cms/uploads/article/main_image/72605/vacas.jpg" alt="Forrajes para ganado" onclick="enlargeImage(this)">
+        </div>
+      </div>
+    </section>
+
+    <!-- Alimentación -->
+    <section class="info" id="alimentacion">
+      <h2>Alimentación 
+        <button onclick="toggleSection('alimentacion-content')" class="mostrar">Mostrar/Ocultar</button>
+      </h2>
+      <div id="alimentacion-content">
+        <p>
+          La dieta del ganado vacuno se basa principalmente en pasto, silo y heno. 
+          También se puede complementar con granos (maíz, sorgo) y suplementos proteicos.
+        </p>
+        <ul>
+          <li>🌱 <strong>Pasto fresco:</strong> principal fuente de nutrientes.</li>
+          <li>🌾 <strong>Heno y ensilaje:</strong> reservas para épocas secas.</li>
+          <li>🥬 <strong>Suplementos:</strong> sales minerales y vitaminas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Producción de leche -->
+    <section class="info" id="leche">
+      <h2>Producción de leche 
+        <button onclick="toggleSection('leche-content')" class="mostrar">Mostrar/Ocultar</button>
+      </h2>
+      <div id="leche-content">
+        <p>
+          Una vaca lechera puede producir entre <strong>20 y 40 litros diarios</strong> de leche,
+          dependiendo de la raza, la genética, la alimentación y el manejo.
+        </p>
+        <p>
+          La <strong>Holstein</strong> es la más productiva, mientras que la <strong>Jersey</strong> 
+          destaca por la calidad y el contenido graso de su leche.
+        </p>
+      </div>
+    </section>
+
+    <!-- Producción de carne -->
+    <section class="info" id="carne">
+      <h2>Producción de carne 
+        <button onclick="toggleSection('carne-content')" class="mostrar">Mostrar/Ocultar</button>
+      </h2>
+      <div id="carne-content">
+        <p>
+          Las razas de carne como <strong>Angus</strong> y <strong>Hereford</strong> 
+          son criadas por su carne de alta calidad y rápido crecimiento.
+        </p>
+        <p>
+          El manejo adecuado de la alimentación y el pastoreo influye directamente 
+          en la calidad del producto final.
+        </p>
+      </div>
+    </section>
+
+    <!-- Salud y manejo -->
+    <section class="info" id="salud">
+      <h2>Salud y manejo 
+        <button onclick="toggleSection('salud-content')" class="mostrar">Mostrar/Ocultar</button>
+      </h2>
+      <div id="salud-content">
+        <p>
+          El ganado requiere cuidados veterinarios periódicos: vacunación, desparasitación 
+          y control de parásitos externos. 
+        </p>
+        <ul>
+          <li>💉 Vacunas contra fiebre aftosa y brucelosis.</li>
+          <li>🪱 Desparasitación interna y externa.</li>
+          <li>🏡 Corrales limpios y ventilados.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Noticias -->
+    <section class="info">
+      <h2>📰 Noticias sobre vacas</h2>
+      <input type="text" id="news-search" placeholder="Buscar noticias..." onkeyup="filterNews()" class="buscador">
+      <div id="news-container"></div>
+    </section>
+
+    <!-- Modal de imágenes -->
+    <div id="image-modal" class="modal" onclick="closeModal()">
+      <img id="modal-img" src="" alt="imagen ampliada">
+      <span class="close" onclick="closeModal()">✖</span>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3><i class="fas fa-phone-alt"></i> Números de Contacto</h3>
+        <ul>
+          <li>+57 311 7091198</li>
+          <li>+57 312 7759123</li>
+          <li>+57 314 2716135</li>
+          <li>+57 316 0993123</li>
+          <li>+57 314 6461709</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3><i class="fas fa-share-alt"></i> Redes Sociales</h3>
+        <div class="social-icons">
+          <a href="#"><img src="https://www.freeiconspng.com/uploads/facebook-logo-3.png" alt="Facebook"></a>
+          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram"></a>
+          <a href="#"><img src="https://img.freepik.com/vector-gratis/nuevo-diseno-icono-x-logotipo-twitter-2023_1017-45418.jpg" alt="Twitter"></a>
+          <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS12cuQlU2h6d0V-rLkxpSJSdBJ89ZO4uGTPA&s" alt="YouTube"></a>
+        </div>
+        <p class="terminos">© 2025 | <a href="/termicos-condiciones/index.html">Términos de uso</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h3><i class="fas fa-envelope"></i> Correos Electrónicos</h3>
+        <ul>
+          <li>jeanc1778@gmail.com</li>
+          <li>forcemenrtartu@gmail.com</li>
+          <li>luisestebannarvaez82@gmail.com</li>
+          <li>chicanganad9@gmail.com</li>
+          <li>elviracastrojuliandavid@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="usuario.js"></script>
+</body>
+</html>
